@@ -1,0 +1,93 @@
+{
+  "name": "nuxt-element-admin",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt --mode development",
+    "build:test": "nuxt build --mode test",
+    "build:prod": "nuxt build --mode production",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --fix --ext .js,.vue",
+    "lint:style": "stylelint **/*.{vue,css}",
+    "lint": "npm run lint:js && npm run lint:style",
+    "prettier": "prettier --write .",
+    "test": "jest",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{js,jsx,vue}": [
+      "npm run lint",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/component-cache": "^1.1.6",
+    "accounting": "^0.4.1",
+    "axios": "^0.20.0",
+    "commitizen": "^4.2.0",
+    "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.2.1",
+    "dayjs": "^1.8.34",
+    "dotenv": "^8.2.0",
+    "dotenv-expand": "^5.1.0",
+    "echarts": "^5.0.2",
+    "element-ui": "^2.13.2",
+    "file-saver": "^2.0.5",
+    "font-awesome": "^4.7.0",
+    "fundebug-javascript": "^2.4.2",
+    "js-cookie": "^2.2.1",
+    "js-md5": "^0.7.3",
+    "md5": "^2.3.0",
+    "mockjs": "^1.1.0",
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.14.0",
+    "nuxt-i18n": "^6.13.12",
+    "svg-sprite-loader": "^5.0.0",
+    "ua-device": "^0.1.10",
+    "v-distpicker": "^1.2.7",
+    "vod-js-sdk-v6": "^1.4.11",
+    "vue-count-to": "^1.0.13",
+    "vue-i18n": "^8.21.0",
+    "vuex-persistedstate": "3.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/stylelint-module": "^4.0.0",
+    "@vue/test-utils": "^1.0.3",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "hard-source-webpack-plugin": "^0.13.1",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.3",
+    "stylelint": "^13.6.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "vue-jest": "^3.0.4"
+  }
+}

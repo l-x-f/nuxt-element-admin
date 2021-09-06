@@ -1,0 +1,90 @@
+/* Color
+-------------------------- */
+/// color|1|Brand Color|0
+$color-primary: #409eff; // 409EFF
+$color-primary-hover: #409eff; // 409EFF
+$color-primary-click: #409eff; // 409EFF
+
+/// color|1|Background Color|4
+$color-text-main: #333;
+$color-white: #fff;
+/// color|1|Background Color|4
+$color-black: #000;
+/// color|1|Functional Color|1
+$color-success: #2fd163; // 67C23A
+/// color|1|Functional Color|1
+$color-warning: #f5a623; // E6A23C
+/// color|1|Functional Color|1
+$color-danger: #ff4d4f; // F56C6C
+/// color|1|Functional Color|1
+$color-info: #a7a8ad; // 909399
+
+/// color|1|Font Color|2
+$color-text-primary: #2d303b; // 303133
+/// color|1|Font Color|2
+$color-text-regular: #6a6c73; // 606266
+/// color|1|Font Color|2
+$color-text-secondary: #a7a8ad; // 909399
+/// color|1|Font Color|2
+$color-text-placeholder: #c6c7ca; // C0C4CC
+/// color|1|Border Color|3
+$border-color-base: #dcdee6; // DCDFE6
+/// color|1|Border Color|3
+$border-color-light: #e4e8f3; // E4E7ED
+/// color|1|Border Color|3
+$border-color-lighter: #ebeef5;
+/// color|1|Border Color|3
+$border-color-extra-light: #f2f6fc;
+
+// Font size
+$font-size-heading1: 32px;
+$font-size-heading2: 24px;
+$font-size-heading3: 18px;
+$font-size-heading4: 16px;
+$font-size-heading5: 14px;
+$font-size-heading6: 12px;
+$line-height-default: 1.5;
+
+// Background
+
+$background-color-base: #f5f5f5;
+$background-color-light: #f5f6f9;
+$background-color-white: #fff;
+$background-color-header: #304156;
+
+// main content width
+$max-width: 1920px;
+$min-width: 780px;
+$header-height: 64px;
+$footer-height: 60px;
+$breadcrumb-height: 40px;
+
+$menu-text-color: $color-text-secondary;
+$menu-active-text-color: $color-white;
+$submenu-active-text-color: #f4f4f5;
+$menu-bg-color:#304156;
+$submenu-bg-color: #304156;
+$submenu-hover-color: #001528;
+$sidebar-width: 200px; // 侧边栏宽度
+$sidebar-min-width: 100px; // 侧边栏最小宽度
+
+:export {
+  INFO_COLOR: $color-info;
+  DANGER_COLOR: $color-danger;
+  PRIMARY_COLOR: $color-primary;
+  SUCCESS_COLOR: $color-success;
+  WARNING_COLOR: $color-warning;
+  TEXTPRIMARY_COLOR: $color-text-primary;
+  TEXTREGULAR_COLOR: $color-text-regular;
+  MENU_BG_COLOR: $menu-bg-color;
+  MENU_TEXT_COLOR: $menu-text-color;
+  MENU_ACTIVE_TEXT_COLOR: $menu-active-text-color;
+  SUBMENU_BG_COLOR: $submenu-bg-color;
+  SUBMENU_HOVER_COLOR: $submenu-hover-color;
+  SUBMENU_ACTIVE_TEXT_COLOR: $submenu-active-text-color;
+  HEADER_HEIGHT: $header-height;
+  FOOTER_HEIGHT: $footer-height;
+  BREADCRUMB_HEIGHT: $breadcrumb-height;
+  SIDEBAR_WIDTH: $sidebar-width;
+  SIDEBAR_MIN_WIDTH: $sidebar-min-width;
+}

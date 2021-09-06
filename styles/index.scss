@@ -1,0 +1,67 @@
+@import './var.scss';
+@import './margin.scss';
+@import './reset.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, Arial, sans-serif;
+  font-size: 14px;
+  background-color: $background-color-base;
+}
+
+.hide-upload {
+  .el-upload--picture-card {
+    display: none;
+  }
+}
+
+.distpicker-address-wrapper {
+  width: 100%;
+
+  label {
+    width: 33%;
+
+    select {
+      font-size: 14px;
+      font-weight: normal;
+      padding: 5px;
+      box-sizing: border-box;
+      height: 32px;
+      line-height: 32px;
+
+      &:focus {
+        outline: none;
+        border-color: #1890ff;
+      }
+    }
+  }
+}
+
+.link {
+  cursor: pointer;
+  color: #409eff;
+  user-select: none;
+  padding-left: 10px;
+}
+
+
+.is-required {
+  content: "*";
+  color: #f56c6c;
+  margin-right: 4px;
+}
+
+.col-black {
+  color: #606266;
+}
+
+// 单行文本超出显示省略号
+.text-overflow-hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

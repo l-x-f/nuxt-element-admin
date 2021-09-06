@@ -1,0 +1,7 @@
+.nuxt
+node_modules
+tests
+test
+styles
+/static/
+assets
