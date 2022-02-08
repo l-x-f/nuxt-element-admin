@@ -39,17 +39,10 @@
 
 ```
 
-## 打包启动
+## 启动
 
 ```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# generate static project
-$ yarn generate
+ yarn install &&  yarn dev
 ```
 
 ## 提交代码

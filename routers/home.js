@@ -7,7 +7,7 @@ const routes = [
     children: [
       {
         // 系统首页
-        path: '/home/index',
+        path: '/home',
         name: '系统首页'
       }
     ]

@@ -37,8 +37,8 @@ export default function ({ $axios, redirect, store, route, req }) {
     // 清除所有提示
     Message.closeAll()
     if (status === 200) {
-      const code = data?.code
-      const message = data?.message
+      const code = data.code
+      const message = data.message
       if (code && (code === 'NOT_LOGIN' || code === 'TOKEN_EMPTY')) {
         // token过期了
         Message({

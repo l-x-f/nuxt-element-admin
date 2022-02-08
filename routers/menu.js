@@ -7,15 +7,15 @@ const routes = [
     children: [
       {
         // 系统首页
-        path: '/menu/index',
+        path: '/menu',
         name: '一级菜单',
         children: [
           {
-            path: '/menu/two/index',
+            path: '/menu/two',
             name: '二级菜单',
             children: [
               {
-                path: '/menu/two/three/index',
+                path: '/menu/two/three',
                 name: '三级菜单'
               }
             ]
